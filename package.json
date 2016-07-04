@@ -1,0 +1,33 @@
+{
+  "name": "purchaseorder",
+  "version": "1.0.0",
+  "description": "project was created to be configurated outside of your module, by another module configurator, just sample",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ramiro Pedrozo",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "compression": "^1.6.2",
+    "cors": "^2.7.1",
+    "method-override": "^2.3.6",
+    "morgan": "^1.7.0",
+    "serve-favicon": "^2.3.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-inject": "^4.1.0",
+    "gulp-require-tasks": "^1.0.3"
+  },
+  "paths": {
+    "client": "./src/client/",
+    "server": "./src/server/",
+    "api": "/api",
+    "data": "/../../data/",
+    "test": "./src/client/test/",
+    "html": "./src/client/**/*.html",
+    "htmltemplates": "./src/client/app/**/*.html"
+  }
+}
