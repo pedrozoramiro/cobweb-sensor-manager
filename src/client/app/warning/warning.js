@@ -7,6 +7,10 @@
 
     function warning(datacontext) {
         var vm = this;
-        vm.title = datacontext.products.getAllProducts();
+        vm.products = [];
+        datacontext.products.getAll().then(function(result){
+            vm.products = result;
+            console.log(result);
+        });
     }
 })();

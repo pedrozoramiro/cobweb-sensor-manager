@@ -9,11 +9,11 @@
         var Product = $resource('/api/products/:id',{id:'@_id'},{update:{method:"PUT"}});
 
         return {
-            getAllProducts: getAllProducts
+            getAll: getAll
         };
 
-        function getAllProducts() {
-            return Product.query();
+        function getAll() {
+            return Product.query().$promise;
         }
     }
 })();

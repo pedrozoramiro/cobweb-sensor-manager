@@ -12,9 +12,6 @@ var port = process.env.PORT || 3001;
 var routes;
 
 var environment = process.env.NODE_ENV;
-var oneDay = 86400000;
-var pkg = require('./../../package.json');
-
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 app.use(compress());            
@@ -37,7 +34,8 @@ switch (environment) {
         break;
     default:
         console.log('** DEV **');
-        app.use('/', express.static(pkg.paths.client, {maxAge: oneDay}));
+        console.log('serving from ' + './src/client/ and ./');
+        app.use('/', express.static('./src/client/'));
         app.use('/', express.static('./'));
         break;
 }

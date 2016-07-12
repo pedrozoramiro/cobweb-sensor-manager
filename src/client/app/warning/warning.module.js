@@ -1,4 +1,4 @@
 (function () {
     'use strict';
-   angular.module('app.warning', ['ngRoute']);
+   angular.module('app.warning', []);
 })();
