@@ -3,10 +3,10 @@
 
     angular.module('app.warning').controller('Warning', warning);
 
-    warning.$inject = [];
+    warning.$inject = ['datacontext'];
 
-    function warning() {
+    function warning(datacontext) {
         var vm = this;
-        vm.title = 'warning MALANDRO';
+        vm.title = datacontext.products.getAllProducts();
     }
 })();
