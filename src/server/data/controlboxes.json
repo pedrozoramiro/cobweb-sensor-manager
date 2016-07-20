@@ -1,0 +1,20 @@
+[
+    {
+        "id": "1",
+        "name": "Central da cozinha",
+        "frequency":1000,
+        "sensors": [
+            {"port": 1,"name": "Sensor de abertura de porta A"},
+            {"port": 2, "name": "Sensor de tensão na torneira elétrica"}
+        ]
+    },
+    {
+        "id": "2",
+        "name": "Central do escritório",
+        "frequency":1000,
+        "sensors": [
+            {"port": 1,"name": "Sensor de temperatura"},
+            {"port": 2, "name": "Sensor de presença"}
+        ]
+    }
+]
