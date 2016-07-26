@@ -2,38 +2,43 @@
 <html ng-app="app" >
 <head>
   <title>Products</title>
-  <!-- inject:css -->
-  <link rel="stylesheet" href="/bower_components/angular/angular-csp.css">
-  <!-- endinject -->
-
-<script src="/bower_components/jquery/dist/jquery.js"></script>
-<script src="/bower_components/angular/angular.js"></script>
-<script src="/bower_components/angular-route/angular-route.js"></script>
-<script src="/bower_components/angular-resource/angular-resource.js"></script>
-
-
-<!-- inject:js -->
-<script src="/src/client/app/app.module.js"></script>
-<script src="/src/client/app/data/data.module.js"></script>
-<script src="/src/client/app/login/login.module.js"></script>
-<script src="/src/client/app/warning/warning.module.js"></script>
-<script src="/src/client/app/configuration/config.module.js"></script>
-
-<script src="/src/client/app/configuration/smartConfigurable.js"></script>
-<script src="/src/client/app/data/datacontext.js"></script>
-<script src="/src/client/app/login/login.js"></script>
-<script src="/src/client/app/login/route.config.js"></script>
-<script src="/src/client/app/warning/route.config.js"></script>
-<script src="/src/client/app/warning/warning.js"></script>
-<script src="/src/client/app/data/repositories/products.repository.js"></script>
-<!-- endinject -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/angular-material/angular-material.css">
+    <!-- endinject -->
+    <!-- inject:css -->
+    <!-- endinject -->
 </head>
-
 <body>
     <div>
       <div>
         <div ng-view></div>
     </div>
     </div>
+
+  <!-- bower:js -->
+  <script src="/bower_components/angular/angular.js"></script>
+  <script src="/bower_components/angular-route/angular-route.js"></script>
+  <script src="/bower_components/angular-resource/angular-resource.js"></script>
+  <script src="/bower_components/angular-animate/angular-animate.js"></script>
+  <script src="/bower_components/angular-aria/angular-aria.js"></script>
+  <script src="/bower_components/angular-messages/angular-messages.js"></script>
+  <script src="/bower_components/angular-material/angular-material.js"></script>
+  <!-- endinject -->
+  <!-- inject:js -->
+  <script src="/src/client/app/app.module.js"></script>
+  <script src="/src/client/app/configuration/config.module.js"></script>
+  <script src="/src/client/app/data/data.module.js"></script>
+  <script src="/src/client/app/login/login.module.js"></script>
+  <script src="/src/client/app/warning/warning.module.js"></script>
+  <script src="/src/client/app/widgets/widgets.module.js"></script>
+  <script src="/src/client/app/configuration/smartConfigurable.js"></script>
+  <script src="/src/client/app/data/datacontext.js"></script>
+  <script src="/src/client/app/login/login.js"></script>
+  <script src="/src/client/app/login/route.config.js"></script>
+  <script src="/src/client/app/warning/route.config.js"></script>
+  <script src="/src/client/app/warning/warning.js"></script>
+  <script src="/src/client/app/widgets/myPaperButton.js"></script>
+  <script src="/src/client/app/data/repositories/products.repository.js"></script>
+  <!-- endinject -->
 </body>
 </html>
