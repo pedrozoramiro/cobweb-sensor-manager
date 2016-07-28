@@ -1,17 +1,15 @@
-<div flex-xs flex-gt-xs="50" layout="column">
-  <md-card  md-theme-watch>
+<md-button>
+  <md-card  md-theme="default"  >
     <md-card-title>
       <md-card-title-text>
-        <span class="md-headline">{{title}}</span>
+        <span class="md-headline"  ng-style="{color: color}">{{title}}</span>
         <span class="md-subhead">{{subtitle}}</span>
       </md-card-title-text>
-      <md-card-title-media>
-        <div class="md-media-sm card-media"></div>
+      <md-card-title-media >
+        <div class="md-media-sm card-media" style="color:gray">
+          <i class="material-icons md-60" >{{icon}}</i>
+        </div>
       </md-card-title-media>
     </md-card-title>
-    <md-card-actions layout="row" layout-align="end center">
-      <md-button>Action 1</md-button>
-      <md-button>Action 2</md-button>
-    </md-card-actions>
   </md-card>
-</div>
+</md-button>

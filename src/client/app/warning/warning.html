@@ -1,21 +1,25 @@
-<div flex-xs flex-gt-xs="50" layout="column">
- <my-paper-button title="ABERTO" subtitle="porta da garagem" icon="teste" />
-</div>
-<div flex-xs flex-gt-xs="50" layout="column">
- <my-paper-button title="ABERTO" subtitle="porta da garagem" icon="teste" />
-</div>
-<div flex-xs flex-gt-xs="50" layout="column">
- <my-paper-button title="ABERTO" subtitle="porta da garagem" icon="teste" />
-</div>
-<div flex-xs flex-gt-xs="50" layout="column">
- <my-paper-button title="ABERTO" subtitle="porta da garagem" icon="teste" />
-</div>
-<div flex-xs flex-gt-xs="50" layout="column">
- <my-paper-button title="ABERTO" subtitle="porta da garagem" icon="teste" />
-</div>
-<div flex-xs flex-gt-xs="50" layout="column">
- <my-paper-button title="ABERTO" subtitle="porta da garagem" icon="teste" />
-</div>
-<div flex-xs flex-gt-xs="50" layout="column">
- <my-paper-button title="ABERTO" subtitle="porta da garagem" icon="teste" />
-</div>
+<md-content layout-wrap ng-repeat="box in vm.boxes">
+
+      <md-card class="content-background">
+            <md-card-header>
+                  <md-card-title-text>
+                        <span class="md-headline">{{box.name}}</span>
+                        <span class="md-subhead">({{box.date | date:'medium'}})</span>
+                  </md-card-title-text>
+            </md-card-header>
+            <md-card-content layout="row">
+                  <div class="card-media">
+                        <my-paper-button ng-repeat="sensor in box.sensors" 
+                        title="{{sensor.state.value}}" 
+                        subtitle="{{sensor.name}}" 
+                        color="{{sensor.color}}"
+                        icon="{{sensor.icon}}" />
+                  </div>
+            </md-card-content>
+      </md-card>
+
+
+
+
+</md-content>
+{{vm}}

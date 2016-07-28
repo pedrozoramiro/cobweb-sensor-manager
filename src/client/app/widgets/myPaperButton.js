@@ -12,7 +12,9 @@
             scope: {
                 'title': '@',
                 'subtitle': '@',
-                'icon': '@'
+                'time': '@',
+                'icon': '@',
+                'color':'@'
             },
             restrict: 'E',
             templateUrl: 'app/widgets/myPaperButton.html',

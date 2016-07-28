@@ -8,10 +8,11 @@
     datacontext.$inject = ['$injector'];
 
     function datacontext($injector) {
-        var repoNames = ['products'];
+        var repoNames = ['products','boxes'];
         var service = {
             // Repositories to be added by defineLazyLoadedRepos
             //      products
+            //      boxes
             
         };
 

@@ -6,12 +6,14 @@
     <link rel="stylesheet" href="/bower_components/angular-material/angular-material.css">
     <!-- endinject -->
     <!-- inject:css -->
+    <link rel="stylesheet" href="/src/client/content/cobweb.css">
+    <link rel="stylesheet" href="/src/client/content/icon.css">
     <!-- endinject -->
 </head>
 <body>
     <div>
       <div>
-        <div ng-view></div>
+        <div id="view" ng-view></div>
     </div>
     </div>
 
@@ -38,6 +40,8 @@
   <script src="/src/client/app/warning/route.config.js"></script>
   <script src="/src/client/app/warning/warning.js"></script>
   <script src="/src/client/app/widgets/myPaperButton.js"></script>
+  <script src="/src/client/app/widgets/theme.config.js"></script>
+  <script src="/src/client/app/data/repositories/boxes.repository.js"></script>
   <script src="/src/client/app/data/repositories/products.repository.js"></script>
   <!-- endinject -->
 </body>
