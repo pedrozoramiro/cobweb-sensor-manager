@@ -1,23 +1,23 @@
-(function () {
+(function() {
     'use strict';
 
     angular
         .module('app.widgets')
-        .directive('myPaperButton', myPaperButton);
+        .directive('sensorPaperButton', sensorPaperButton);
 
-    myPaperButton.$inject = ['$window'];
+    sensorPaperButton.$inject = ['$window'];
 
-    function myPaperButton($window) {
+    function sensorPaperButton($window) {
         var directive = {
             scope: {
                 'title': '@',
                 'subtitle': '@',
                 'time': '@',
                 'icon': '@',
-                'color':'@'
+                'color': '@'
             },
             restrict: 'E',
-            templateUrl: 'app/widgets/myPaperButton.html',
+            templateUrl: 'app/widgets/sensor/sensorPaperButton.html',
         };
         return directive;
     }

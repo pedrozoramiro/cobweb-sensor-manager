@@ -1,29 +1,29 @@
-[   {"id": "1","name": "Central do cozinha","frequency":1000,"date":1288323623006,
+[   {"id": 1,"name": "Central do cozinha","frequency":1000,"date":1288323623006,
      "sensors": [
-         {"port": 1,"name": "gases","icon":"wb_sunny","color":"gray","state":{"date":1288323623006,"value":"47 c°"}},
-         {"port": 2, "name": "Presença","icon":"settings_input_antenna","color":"green","state":{"date":1288323623006,"value":"ABERTA"}},
-         {"port": 2, "name": "Porta da frente","icon":"lock","color":"blue","state":{"date":1288323623006,"value":"FECHADO"}},
-         {"port": 1,"name": "Temperatura","icon":"wb_sunny","color":"red","state":{"date":1288323623006,"value":"18 c°"}},
-         {"port": 1,"name": "gases","icon":"wb_sunny","color":"gray","state":{"date":1288323623006,"value":"47 c°"}},
-         {"port": 2, "name": "Presença","icon":"settings_input_antenna","color":"green","state":{"date":1288323623006,"value":"ABERTA"}},
-         {"port": 2, "name": "Porta da frente","icon":"lock","color":"blue","state":{"date":1288323623006,"value":"FECHADO"}},
-         {"port": 1,"name": "Temperatura","icon":"wb_sunny","color":"red","state":{"date":1288323623006,"value":"18 c°"}},
-         {"port": 1,"name": "gases","icon":"wb_sunny","color":"gray","state":{"date":1288323623006,"value":"47 c°"}},
-         {"port": 2, "name": "Porta da frente","icon":"lock","color":"blue","state":{"date":1288323623006,"value":"FECHADO"}}
+         {"id":1,"port": 1,"name": "gases","icon":"wb_sunny","color":"gray","state":{"date":1288323623006,"value":"47 c°"}},
+         {"id":2,"port": 2, "name": "Presença","icon":"settings_input_antenna","color":"green","state":{"date":1288323623006,"value":"ABERTA"}},
+         {"id":3,"port": 2, "name": "Porta da frente","icon":"lock","color":"blue","state":{"date":1288323623006,"value":"FECHADO"}},
+         {"id":4,"port": 1,"name": "Temperatura","icon":"wb_sunny","color":"red","state":{"date":1288323623006,"value":"18 c°"}},
+         {"id":5,"port": 1,"name": "gases","icon":"wb_sunny","color":"gray","state":{"date":1288323623006,"value":"47 c°"}},
+         {"id":6,"port": 2, "name": "Presença","icon":"settings_input_antenna","color":"green","state":{"date":1288323623006,"value":"ABERTA"}},
+         {"id":7,"port": 2, "name": "Porta da frente","icon":"lock","color":"blue","state":{"date":1288323623006,"value":"FECHADO"}},
+         {"id":8,"port": 1,"name": "Temperatura","icon":"wb_sunny","color":"red","state":{"date":1288323623006,"value":"18 c°"}},
+         {"id":9,"port": 1,"name": "gases","icon":"wb_sunny","color":"gray","state":{"date":1288323623006,"value":"47 c°"}},
+         {"id":10,"port": 2, "name": "Porta da frente","icon":"lock","color":"blue","state":{"date":1288323623006,"value":"FECHADO"}}
     ]},
-    {"id": "2","name": "Central do escritório","frequency":1000,"date":1288323623006,
+    {"id": 2,"name": "Central do escritório","frequency":1000,"date":1288323623006,
      "sensors": [
-         {"port": 1,"name": "Temperatura","icon":"wb_sunny","color":"red","state":{"date":1288323623006,"value":"18 c°"}},
-         {"port": 2, "name": "Presença","icon":"settings_input_antenna","color":"green","state":{"date":1288323623006,"value":"ABERTA"}},
-         {"port": 1,"name": "Temperatura","icon":"wb_sunny","color":"red","state":{"date":1288323623006,"value":"18 c°"}},
-         {"port": 2, "name": "Presença","icon":"settings_input_antenna","color":"green","state":{"date":1288323623006,"value":"ABERTA"}},
-         {"port": 1,"name": "Temperatura","icon":"wb_sunny","color":"red","state":{"date":1288323623006,"value":"18 c°"}},
-         {"port": 1,"name": "Temperatura","icon":"wb_sunny","color":"red","state":{"date":1288323623006,"value":"18 c°"}},
-         {"port": 2, "name": "Presença","icon":"settings_input_antenna","color":"green","state":{"date":1288323623006,"value":"ABERTA"}},
-         {"port": 1,"name": "Temperatura","icon":"wb_sunny","color":"red","state":{"date":1288323623006,"value":"18 c°"}},
-         {"port": 2, "name": "Presença","icon":"settings_input_antenna","color":"green","state":{"date":1288323623006,"value":"ABERTA"}},
-         {"port": 1,"name": "Temperatura","icon":"wb_sunny","color":"red","state":{"date":1288323623006,"value":"18 c°"}},
-         {"port": 2, "name": "Presença","icon":"settings_input_antenna","color":"green","state":{"date":1288323623006,"value":"ABERTA"}}
+         {"id":1, "port": 1,"name": "Temperatura","icon":"wb_sunny","color":"red","state":{"date":1288323623006,"value":"18 c°"}},
+         {"id":2, "port": 2, "name": "Presença","icon":"settings_input_antenna","color":"green","state":{"date":1288323623006,"value":"ABERTA"}},
+         {"id":3, "port": 1,"name": "Temperatura","icon":"wb_sunny","color":"red","state":{"date":1288323623006,"value":"18 c°"}},
+         {"id":4, "port": 2, "name": "Presença","icon":"settings_input_antenna","color":"green","state":{"date":1288323623006,"value":"ABERTA"}},
+         {"id":5, "port": 1,"name": "Temperatura","icon":"wb_sunny","color":"red","state":{"date":1288323623006,"value":"18 c°"}},
+         {"id":6, "port": 1,"name": "Temperatura","icon":"wb_sunny","color":"red","state":{"date":1288323623006,"value":"18 c°"}},
+         {"id":7, "port": 2, "name": "Presença","icon":"settings_input_antenna","color":"green","state":{"date":1288323623006,"value":"ABERTA"}},
+         {"id":8, "port": 1,"name": "Temperatura","icon":"wb_sunny","color":"red","state":{"date":1288323623006,"value":"18 c°"}},
+         {"id":9, "port": 2, "name": "Presença","icon":"settings_input_antenna","color":"green","state":{"date":1288323623006,"value":"ABERTA"}},
+         {"id":10,"port": 1,"name": "Temperatura","icon":"wb_sunny","color":"red","state":{"date":1288323623006,"value":"18 c°"}},
+         {"id":11,"port": 2, "name": "Presença","icon":"settings_input_antenna","color":"green","state":{"date":1288323623006,"value":"ABERTA"}}
     ]}
 
 

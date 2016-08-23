@@ -1,5 +1,16 @@
-.material-icons.orange { color: #FB8C00; }
-.material-icons.warning { color:red; }
+.material-icons.orange {
+    color: #FB8C00;
+}
+
+.material-icons.warning {
+    color: red;
+}
+
 .content-background {
-    background-color:  #f7f7f7;
+    background-color: #f7f7f7;
+}
+
+.sensor-paper-button {
+    width: 250px;
+    color: gray
 }

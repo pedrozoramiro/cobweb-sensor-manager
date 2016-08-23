@@ -1,7 +1,7 @@
-(function () {
+(function() {
     'use strict';
 
-    angular.module('app.login').controller('LoginCrt', login);
+    angular.module('app.login').controller('Login', login);
 
     login.$inject = [];
 
