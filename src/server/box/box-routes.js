@@ -7,7 +7,6 @@ module.exports = function(app, db) {
 
     });
 
-
     app.get('/boxes/:idBox/sensor/:idSensor', function(req, res) {
         var idSensor = req.params.idSensor;
         var idBox = req.params.idBox;

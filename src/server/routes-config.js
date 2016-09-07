@@ -6,6 +6,7 @@ module.exports = function(app) {
 
     require('./box/box-routes.js')(api, db);
     require('./product/routes-product.js')(api, db);
+    require('./user/routes-user.js')(api, db);
     app.use('/api', authentication.expressJwtConfigureable());
     app.use('/api', api);
 }
