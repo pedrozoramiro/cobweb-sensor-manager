@@ -8,12 +8,12 @@
     datacontext.$inject = ['$injector'];
 
     function datacontext($injector) {
-        var repoNames = ['products','boxes'];
+        var repoNames = ['products', 'boxes', 'auth'];
         var service = {
             // Repositories to be added by defineLazyLoadedRepos
             //      products
             //      boxes
-            
+
         };
 
         defineLazyLoadedRepos();
@@ -45,7 +45,7 @@
         function getRepo(repoName) {
             var fullRepoName = 'repository.' + repoName.toLowerCase();
             var factory = $injector.get(fullRepoName);
-            return factory;//factory.create();
+            return factory; //factory.create();
         }
 
     }

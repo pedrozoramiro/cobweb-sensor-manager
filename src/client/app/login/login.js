@@ -3,10 +3,16 @@
 
     angular.module('app.login').controller('Login', login);
 
-    login.$inject = [];
+    login.$inject = ['datacontext'];
 
-    function login() {
+    function login(datacontext) {
         var vm = this;
-        vm.title = 'LOGIN MALANDRO';
+        vm.authenticate = authenticate;
+
+        function authenticate(user) {
+            datacontext.auth.signin(user).then(function(token) {
+                alert(token);
+            });
+        }
     }
 })();

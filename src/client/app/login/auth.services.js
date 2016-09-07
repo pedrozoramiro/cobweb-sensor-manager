@@ -51,7 +51,7 @@ angular.module('app')
             signup: function(data, success, error) {
                 $http.post(urls.BASE + '/signup', data).success(success).error(error)
             },
-            : function(data, success, error) {
+            signin: function(data, success, error) {
                 $http.post(urls.BASE + '/signin', data).success(success).error(error)
             },
             logout: function(success) {

@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html ng-app="app" >
+<html ng-app="app">
+
 <head>
-  <title>Products</title>
+    <title>Products</title>
     <!-- bower:css -->
     <link rel="stylesheet" href="/bower_components/angular-material/angular-material.css">
     <!-- endinject -->
@@ -10,44 +11,40 @@
     <link rel="stylesheet" href="/src/client/content/icon.css">
     <!-- endinject -->
 </head>
-<body>
-    <div>
-      <div>
-        <div id="view" ng-view></div>
-    </div>
-    </div>
 
-  <!-- bower:js -->
-  <script src="/bower_components/angular/angular.js"></script>
-  <script src="/bower_components/angular-route/angular-route.js"></script>
-  <script src="/bower_components/angular-resource/angular-resource.js"></script>
-  <script src="/bower_components/angular-animate/angular-animate.js"></script>
-  <script src="/bower_components/angular-aria/angular-aria.js"></script>
-  <script src="/bower_components/angular-messages/angular-messages.js"></script>
-  <script src="/bower_components/angular-material/angular-material.js"></script>
-  <!-- endinject -->
-  <!-- inject:js -->
-  <script src="/src/client/app/app.module.js"></script>
-  <script src="/src/client/app/configuration/config.module.js"></script>
-  <script src="/src/client/app/data/data.module.js"></script>
-  <script src="/src/client/app/login/login.module.js"></script>
-  <script src="/src/client/app/sensor/sensor.module.js"></script>
-  <script src="/src/client/app/warning/warning.module.js"></script>
-  <script src="/src/client/app/widgets/widgets.module.js"></script>
-  <script src="/src/client/app/configuration/smartConfigurable.js"></script>
-  <script src="/src/client/app/data/datacontext.js"></script>
-  <script src="/src/client/app/login/login.js"></script>
-  <script src="/src/client/app/login/route.config.js"></script>
-  <script src="/src/client/app/sensor/route.config.js"></script>
-  <script src="/src/client/app/sensor/sensor.js"></script>
-  <script src="/src/client/app/sensor/sensorDetail.js"></script>
-  <script src="/src/client/app/sensor/warning.js"></script>
-  <script src="/src/client/app/warning/route.config.js"></script>
-  <script src="/src/client/app/warning/warning.js"></script>
-  <script src="/src/client/app/widgets/theme.config.js"></script>
-  <script src="/src/client/app/data/repositories/boxes.repository.js"></script>
-  <script src="/src/client/app/data/repositories/products.repository.js"></script>
-  <script src="/src/client/app/widgets/sensor/sensorPaperButton.js"></script>
-  <!-- endinject -->
+<body>
+    <section flex layout-fill>
+        <div ng-view flex layout-fill></div>
+    </section>
+
+    <!-- bower:js -->
+    <script src="/bower_components/angular/angular.js"></script>
+    <script src="/bower_components/angular-route/angular-route.js"></script>
+    <script src="/bower_components/angular-resource/angular-resource.js"></script>
+    <script src="/bower_components/angular-animate/angular-animate.js"></script>
+    <script src="/bower_components/angular-aria/angular-aria.js"></script>
+    <script src="/bower_components/angular-messages/angular-messages.js"></script>
+    <script src="/bower_components/angular-material/angular-material.js"></script>
+    <!-- endinject -->
+    <!-- inject:js -->
+    <script src="/src/client/app/app.module.js"></script>
+    <script src="/src/client/app/configuration/config.module.js"></script>
+    <script src="/src/client/app/data/data.module.js"></script>
+    <script src="/src/client/app/login/login.module.js"></script>
+    <script src="/src/client/app/sensor/sensor.module.js"></script>
+    <script src="/src/client/app/widgets/widgets.module.js"></script>
+    <script src="/src/client/app/configuration/smartConfigurable.js"></script>
+    <script src="/src/client/app/data/datacontext.js"></script>
+    <script src="/src/client/app/login/login.js"></script>
+    <script src="/src/client/app/login/route.config.js"></script>
+    <script src="/src/client/app/sensor/route.config.js"></script>
+    <script src="/src/client/app/sensor/sensor.js"></script>
+    <script src="/src/client/app/sensor/sensorDetail.js"></script>
+    <script src="/src/client/app/widgets/theme.config.js"></script>
+    <script src="/src/client/app/data/repositories/boxes.repository.js"></script>
+    <script src="/src/client/app/data/repositories/products.repository.js"></script>
+    <script src="/src/client/app/widgets/sensor/sensorPaperButton.js"></script>
+    <!-- endinject -->
 </body>
+
 </html>
