@@ -11,4 +11,17 @@
             });
     }
 
+
+    angular.module('app.login').run(['$rootScope', '$location', 'logginRedirect', 'authenticator', function($rootScope, $location, logginRedirect, authenticator) {
+        $rootScope.$on('$routeChangeStart', function(event) {
+            if (!authenticator.isLoggedIn()) {
+                event.preventDefault();
+                $location.path('/login');
+                return;
+            }
+
+            $location.path(logginRedirect);
+
+        });
+    }]);
 })();

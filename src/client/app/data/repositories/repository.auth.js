@@ -9,11 +9,7 @@
         var User = $resource('/api/user/:id', { id: '@_id' }, {
             signin: {
                 url: '/api/user/signin',
-                method: 'POST',
-                params: {
-                    userName: '@userName',
-                    password: '@password'
-                }
+                method: 'POST'
             }
         });
 
@@ -22,7 +18,7 @@
         };
 
         function signin(user) {
-            return User.signin(user).$promise;
+            return User.signin(undefined, user).$promise;
         }
     }
 

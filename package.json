@@ -17,7 +17,8 @@
     "main-bower-files": "^2.13.1",
     "method-override": "^2.3.6",
     "morgan": "^1.7.0",
-    "serve-favicon": "^2.3.0"
+    "serve-favicon": "^2.3.0",
+    "underscore": "^1.8.3"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
