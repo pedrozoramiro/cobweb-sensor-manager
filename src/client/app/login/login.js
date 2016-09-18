@@ -1,20 +1,20 @@
 (function() {
     'use strict';
 
-    angular.module('app.login').controller('Login', login);
+    angular.module('app.login').controller('Login', Login);
 
-    login.$inject = ['$location', 'datacontext', 'authenticator', 'logginRedirect'];
-
-    function login($location, datacontext, authenticator, logginRedirect) {
+    /** @ngInject */
+    function Login(datacontext, authenticator, loginConfig) {
         var vm = this;
         vm.authenticate = authenticate;
 
         function authenticate(user) {
             datacontext.auth.signin(user).then(function(response) {
+                console.log(response);
+                console.log(response.token);
                 if (response.token) {
                     authenticator.login(response.token);
-                    console.log(logginRedirect);
-                    $location.path(logginRedirect);
+                    loginConfig.navigateToHomePageAuthenticate();
                 }
             });
         }

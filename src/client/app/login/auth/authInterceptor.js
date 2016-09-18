@@ -3,9 +3,9 @@
 
     var app = angular.module('app.login');
 
-    app.factory('authInterceptor', ['$q', 'authenticator', authInterceptor]);
+    app.factory('authInterceptor', ['$q', '$log', 'loginConfig', 'authenticator', authInterceptor]);
 
-    function authInterceptor($q, authenticator) {
+    function authInterceptor($q, $log, loginConfig, authenticator) {
         return {
             request: function(config) {
                 config.headers = config.headers || {};
@@ -15,10 +15,8 @@
                 return config;
             },
             responseError: function(rejection) {
-                console.log(rejection);
-                alert(rejection.data + ': ' + rejection.config.url);
                 if (rejection.status === 401) {
-
+                    loginConfig.navigateToLogin();
                 }
                 return $q.reject(rejection);
             }

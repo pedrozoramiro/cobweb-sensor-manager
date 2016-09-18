@@ -7,21 +7,21 @@
             .when('/login', {
                 controllerAs: 'vm',
                 controller: 'Login',
+                isPublic: true,
                 templateUrl: 'app/login/login.html'
             });
     }
 
 
-    angular.module('app.login').run(['$rootScope', '$location', 'logginRedirect', 'authenticator', function($rootScope, $location, logginRedirect, authenticator) {
-        $rootScope.$on('$routeChangeStart', function(event) {
+    angular.module('app.login').run(['$rootScope', 'loginConfig', 'authenticator', function($rootScope, loginConfig, authenticator) {
+        $rootScope.$on('$routeChangeStart', function(event, next, current) {
+
+            if (next.isPublic) return;
+
             if (!authenticator.isLoggedIn()) {
-                event.preventDefault();
-                $location.path('/login');
+                loginConfig.navigateToLogin();
                 return;
             }
-
-            $location.path(logginRedirect);
-
         });
     }]);
 })();

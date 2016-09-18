@@ -1,25 +1,31 @@
-(function () {
+(function() {
     'use strict';
 
-    angular
-        .module('app.config')
-        .directive('smartConfiguratioPage', smartConfiguratioPage);
+    var app = angular.module('app.login');
 
-    smartConfiguratioPage.$inject = ['$window'];
+    app.factory('authInterceptor', ['$q', '$location', 'authenticator', authInterceptor]);
 
-    function smartConfiguratioPage($window) {
-
-        var directive = {
-            link: link,
-            restrict: 'E'
-        };
-        return directive;
-
-        function link(scope, element, attrs) {
-            var i = 0;
-            for (i = 0; i < element[0].children.length; i++) {
-                $(element[0].children[i]).addClass('ng-hide');
+    function authInterceptor($q, $location, authenticator) {
+        return {
+            request: function(config) {
+                config.headers = config.headers || {};
+                if (authenticator.isLoggedIn()) {
+                    config.headers.Authorization = 'Bearer ' + authenticator.getToken();
+                }
+                return config;
+            },
+            responseError: function(rejection) {
+                console.log(rejection);
+                alert(rejection.data + ': ' + rejection.config.url);
+                if (rejection.status === 401) {
+                    $location.path(logginRedirect);
+                }
+                return $q.reject(rejection);
             }
-        }
+        };
     }
+
+    app.config(function($httpProvider) {
+        $httpProvider.interceptors.push('authInterceptor');
+    });
 })();

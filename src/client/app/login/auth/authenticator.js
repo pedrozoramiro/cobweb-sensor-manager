@@ -7,7 +7,6 @@
 
     Authenticator.$inject = ['$cookies', '$window'];
 
-
     function Authenticator($cookies, $window) {
 
         var service = {
@@ -20,40 +19,24 @@
         return service;
 
         function login(token) {
-            var auth = decodeInfoToken(token);
-            auth.token = token;
-            saveAuthInCokkie(auth);
-        }
-
-
-        function getToken() {
-            var auth = getAuth();
-            return !auth ? undefined : auth.token;
-        }
-
-        function getUser() {
-            var auth = getAuth();
-            return !auth ? undefined : auth.user;
+            saveToken(token);
         }
 
         function isLoggedIn() {
             return !!getToken();
         }
 
-        function getAuth() {
-            var auth = getAuthInCokkie();
-
-            if (!auth)
-                return undefined;
-
-            return auth;
+        function getUser() {
+            var token = getToken();
+            var infoToken = decodeInfoToken(token);
+            return infoToken.user;
         }
 
-        function saveAuthInCokkie(auth) {
-            $cookies.put('AUTH', auth);
+        function saveToken(token) {
+            $cookies.put('AUTH', token);
         }
 
-        function getAuthInCokkie() {
+        function getToken() {
             return $cookies.get('AUTH');
         }
 

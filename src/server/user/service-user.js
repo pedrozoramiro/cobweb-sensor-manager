@@ -10,10 +10,7 @@ module.exports = (function() {
     };
 
     function signin(userName, password) {
-        var users = _.findWhere(db.collections.users, { 'name': userName, 'password': password });
-        if (_.isEmpty(users))
-            return false;
-
-        return users;
+        console.log(userName + password);
+        return _.findWhere(db.collections.users, { 'name': userName, 'password': password });
     }
 })();
